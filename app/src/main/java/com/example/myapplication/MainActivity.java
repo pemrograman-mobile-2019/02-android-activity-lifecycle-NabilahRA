@@ -15,36 +15,36 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        Toast.makeText(getApplicationContext(), text: "OnRestart",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "onRestart", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Toast.makeText(getApplicationContext(), text: "OnStart",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    protected void onPostResume() {
-        super.onPostResume();
-        Toast.makeText(getApplicationContext(), text: "OnResume",Toast.LENGTH_SHORT).show();
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Toast.makeText(getApplicationContext(), text: "OnStop",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Toast.makeText(getApplicationContext(), text: "OnPause",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast.makeText(getApplicationContext(), text: "OnDestroy",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
     }
 }
